@@ -1,0 +1,19 @@
+---------------------------------------------------
+XBGAS-ASM-TEST
+---------------------------------------------------
+
+I.	REQUIREMENTS:
+   The RISC-V toolchain from https://github.com/tactcomplabs/xbgas-tools
+   must be installed.  The "RISCV" environment variable must be set pointing
+   to the installation target.  EG: 
+
+   $> export RISCV=/path/to/xbgas-tools
+
+II.	USAGE:
+   Using the included makefile, execute all the tests using "make".  Any issues
+   with the included tests and/or known failures will be reported as build failures.
+
+   $> make
+
+---------------------------------------------------
+EOF
