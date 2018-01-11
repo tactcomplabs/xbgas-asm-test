@@ -5,7 +5,7 @@ OBJDUMP=$(RISCV)/bin/riscv64-unknown-elf-objdump
 
 .PHONY: check-env clean knownfail
 all: runtest
-runtest: check-env clean build-test disass-test check-dis knownfail allsuccess
+runtest: check-env clean build-test disass-test check-dis knownfail ctest allsuccess
 build-test: test/asm/xbgas.s
 	@echo "...building $<"; $(CC) -c -o xbgas.o test/asm/xbgas.s
 disass-test: xbgas.o
@@ -18,7 +18,11 @@ ifndef RISCV
 endif
 knownfail:
 	cd test/knownfail && make
+ctest:
+	cd test/c && make
 allsuccess:
 	@echo "All tests successful!"
 clean:
 	rm -Rf xbgas.o xbgas.out
+	cd test/c && make clean
+

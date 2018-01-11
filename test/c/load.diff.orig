@@ -1,0 +1,60 @@
+
+load.o:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <main-0x1>:
+	...
+
+0000000000000001 <main>:
+   1:	711d                	addi	sp,sp,-96
+   3:	eca2                	sd	s0,88(sp)
+   5:	1080                	addi	s0,sp,96
+   7:	87aa                	mv	a5,a0
+   9:	fab43023          	sd	a1,-96(s0)
+   d:	faf42623          	sw	a5,-84(s0)
+  11:	4785                	li	a5,1
+  13:	faf43c23          	sd	a5,-72(s0)
+  17:	4785                	li	a5,1
+  19:	faf42a23          	sw	a5,-76(s0)
+  1d:	4785                	li	a5,1
+  1f:	faf41923          	sh	a5,-78(s0)
+  23:	4785                	li	a5,1
+  25:	faf408a3          	sb	a5,-79(s0)
+  29:	fb840793          	addi	a5,s0,-72
+  2d:	fef43423          	sd	a5,-24(s0)
+  31:	fb440793          	addi	a5,s0,-76
+  35:	fef43023          	sd	a5,-32(s0)
+  39:	fb240793          	addi	a5,s0,-78
+  3d:	fcf43c23          	sd	a5,-40(s0)
+  41:	fb140793          	addi	a5,s0,-79
+  45:	fcf43823          	sd	a5,-48(s0)
+  49:	fc043423          	sd	zero,-56(s0)
+  4d:	fc042223          	sw	zero,-60(s0)
+  51:	fc041123          	sh	zero,-62(s0)
+  55:	fc0400a3          	sb	zero,-63(s0)
+  59:	fe843783          	ld	a5,-24(s0)
+  5d:	0007b7f7          	eld	a5,0(a5)
+  61:	fcf43423          	sd	a5,-56(s0)
+  65:	fe043783          	ld	a5,-32(s0)
+  69:	0007a7f7          	elw	a5,0(a5)
+  6d:	fcf42223          	sw	a5,-60(s0)
+  71:	fd843783          	ld	a5,-40(s0)
+  75:	000797f7          	elh	a5,0(a5)
+  79:	fcf41123          	sh	a5,-62(s0)
+  7d:	fd043783          	ld	a5,-48(s0)
+  81:	000787f7          	elb	a5,0(a5)
+  85:	fcf400a3          	sb	a5,-63(s0)
+  89:	fd843783          	ld	a5,-40(s0)
+  8d:	0007d7f7          	elhu	a5,0(a5)
+  91:	fcf41123          	sh	a5,-62(s0)
+  95:	fd043783          	ld	a5,-48(s0)
+  99:	0007c7f7          	elbu	a5,0(a5)
+  9d:	fcf400a3          	sb	a5,-63(s0)
+  a1:	4781                	li	a5,0
+  a3:	853e                	mv	a0,a5
+  a5:	6466                	ld	s0,88(sp)
+  a7:	6125                	addi	sp,sp,96
+  a9:	8082                	ret
+	...
