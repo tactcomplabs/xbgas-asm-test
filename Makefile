@@ -8,10 +8,10 @@ all: runtest
 runtest: check-env clean build-test disass-test check-dis knownfail ctest allsuccess
 build-test: test/asm/xbgas.s
 	@echo "...building $<"; $(CC) -c -o xbgas.o test/asm/xbgas.s
-disass-test: xbgas.o
-	@echo "...disass $<"; $(OBJDUMP) -dC xbgas.o >> xbgas.out 2>&1
-check-dis: xbgas.out
-	@echo "...diffing $<"; diff xbgas.out test/asm/xbgas.disass
+disass-test: build-test
+	@echo "...disass xbgas.o"; $(OBJDUMP) -dC xbgas.o >> xbgas.out 2>&1
+check-dis: disass-test
+	@echo "...diffing xbgas.out"; diff xbgas.out test/asm/xbgas.disass
 check-env:
 ifndef RISCV
 	$(error RISCV has not been set)
