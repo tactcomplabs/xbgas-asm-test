@@ -8,9 +8,9 @@ all: runtest
 runtest: check-env clean build-test disass-test check-dis knownfail ctest allsuccess
 build-test: test/asm/xbgas.s
 	@echo "...building $<"; $(CC) -c -o xbgas.o test/asm/xbgas.s
-disass-test: build-test
+disass-test: build-test xbgas.o
 	@echo "...disass xbgas.o"; $(OBJDUMP) -dC xbgas.o >> xbgas.out 2>&1
-check-dis: disass-test
+check-dis: disass-test xbgas.out
 	@echo "...diffing xbgas.out"; diff xbgas.out test/asm/xbgas.disass
 check-env:
 ifndef RISCV
