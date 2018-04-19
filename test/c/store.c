@@ -35,32 +35,32 @@ int main(int argc, char **argv ){
   asm volatile
   (
     " esd %[x],0(%[z])\n\t"
-    : [z] "=r" (P_U64)
-    : [x] "r" (U64)
+		:
+    : [z] "r" (P_U64),  [x] "r" (U64)
   );
 
   /* ESW */
   asm volatile
   (
     " esw %[x],0(%[z])\n\t"
-    : [z] "=r" (P_U32)
-    : [x] "r" (U32)
+		:
+    : [z] "r" (P_U32),  [x] "r" (U32)
   );
 
   /* ESH */
   asm volatile
   (
     " esh %[x],0(%[z])\n\t"
-    : [z] "=r" (P_U16)
-    : [x] "r" (U16)
+		:
+    : [z] "r" (P_U16), [x] "r" (U16)
   );
 
   /* ESB */
   asm volatile
   (
     " esb %[x],0(%[z])\n\t"
-    : [z] "=r" (P_U8)
-    : [x] "r" (U8)
+		:
+    : [z] "r" (P_U8), [x] "r" (U8)
   );
 
   return 0;
