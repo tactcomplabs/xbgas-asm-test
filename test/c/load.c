@@ -14,23 +14,33 @@
 int main(int argc, char **argv ){
 
   /* source data */
+  uint64_t S_U128 = 0x01ull;
   uint64_t S_U64 = 0x01ull;
   uint32_t S_U32 = 0x1ul;
   uint16_t S_U16 = 0x01;
   uint8_t S_U8   = 1;
 
   /* pointers to source data */
+  uint64_t *P_U128 = &S_U128;
   uint64_t *P_U64 = &S_U64;
   uint32_t *P_U32 = &S_U32;
   uint16_t *P_U16 = &S_U16;
   uint8_t *P_U8   = &S_U8;
 
   /* destination data */
+  uint64_t U128 = 0x00ull;
   uint64_t U64 = 0x00ull;
   uint32_t U32 = 0x0ul;
   uint16_t U16 = 0x00;
   uint8_t U8   = 0;
 
+  /* ELQ */
+  asm volatile
+  (
+    " elq %[z],0(%[x])\n\t"
+    : [z] "=r" (U128)
+    : [x] "r" (P_U128)
+  );
   /* ELD */
   asm volatile
   (

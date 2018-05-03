@@ -14,31 +14,50 @@
 int main(int argc, char **argv ){
 
   /* destination data */
+  uint64_t S_U128 = 0x01ull;
   uint64_t S_U64 = 0x01ull;
   uint32_t S_U32 = 0x1ul;
   uint16_t S_U16 = 0x01;
   uint8_t S_U8   = 1;
 
   /* pointers to source data */
+  uint64_t *P_U128 = &S_U128;
   uint64_t *P_U64 = &S_U64;
   uint32_t *P_U32 = &S_U32;
   uint16_t *P_U16 = &S_U16;
   uint8_t *P_U8   = &S_U8;
 
   /* source data */
-  uint64_t U64 = 0x00ull;
-  uint32_t U32 = 0x0ul;
-  uint16_t U16 = 0x00;
-  uint8_t U8   = 0;
+  uint64_t U128 = 0x02ul;
+  uint64_t U64 = 0x01ul;
+  uint32_t U32 = 0x02ul;
+  uint16_t U16 = 0x02ul;
+  uint8_t U8   = 0x02ul;
+  
+	//printf("P_64 = %x\n", P_U64);
+  //printf("P_32 = %x\n", P_U32);
+  //printf("P_16 = %x\n", P_U16);
+  //printf("P_8 = %x\n", P_U8);
+  /* ESQ */
+  asm volatile
+  (
+    " esq %[x],0(%[z])\n\t"
+		:
+    : [z] "r" (P_U128), [x] "r" (U128)
+  );
 
   /* ESD */
   asm volatile
   (
     " esd %[x],0(%[z])\n\t"
 		:
+<<<<<<< HEAD
+    : [z] "r" (P_U64), [x] "r" (U64)
+=======
     : [z] "r" (P_U64),  [x] "r" (U64)
+>>>>>>> 594f9eced7d80945211188688d7b71cc89df8e7c
   );
-
+ 
   /* ESW */
   asm volatile
   (
@@ -51,7 +70,11 @@ int main(int argc, char **argv ){
   asm volatile
   (
     " esh %[x],0(%[z])\n\t"
+<<<<<<< HEAD
+		: 
+=======
 		:
+>>>>>>> 594f9eced7d80945211188688d7b71cc89df8e7c
     : [z] "r" (P_U16), [x] "r" (U16)
   );
 
@@ -60,7 +83,11 @@ int main(int argc, char **argv ){
   (
     " esb %[x],0(%[z])\n\t"
 		:
+<<<<<<< HEAD
+    : [z] "r" (P_U8),  [x] "r" (U8)
+=======
     : [z] "r" (P_U8), [x] "r" (U8)
+>>>>>>> 594f9eced7d80945211188688d7b71cc89df8e7c
   );
 
   return 0;
