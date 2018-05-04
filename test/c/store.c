@@ -51,11 +51,7 @@ int main(int argc, char **argv ){
   (
     " esd %[x],0(%[z])\n\t"
 		:
-<<<<<<< HEAD
-    : [z] "r" (P_U64), [x] "r" (U64)
-=======
     : [z] "r" (P_U64),  [x] "r" (U64)
->>>>>>> 594f9eced7d80945211188688d7b71cc89df8e7c
   );
  
   /* ESW */
@@ -70,11 +66,7 @@ int main(int argc, char **argv ){
   asm volatile
   (
     " esh %[x],0(%[z])\n\t"
-<<<<<<< HEAD
-		: 
-=======
 		:
->>>>>>> 594f9eced7d80945211188688d7b71cc89df8e7c
     : [z] "r" (P_U16), [x] "r" (U16)
   );
 
@@ -83,11 +75,7 @@ int main(int argc, char **argv ){
   (
     " esb %[x],0(%[z])\n\t"
 		:
-<<<<<<< HEAD
     : [z] "r" (P_U8),  [x] "r" (U8)
-=======
-    : [z] "r" (P_U8), [x] "r" (U8)
->>>>>>> 594f9eced7d80945211188688d7b71cc89df8e7c
   );
 
   return 0;

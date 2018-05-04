@@ -21,7 +21,6 @@ Disassembly of section .text:
   1d:	4785                	li	a5,1
   1f:	f8f42e23          	sw	a5,-100(s0)
   23:	4785                	li	a5,1
-<<<<<<< HEAD
   25:	f8f41d23          	sh	a5,-102(s0)
   29:	4785                	li	a5,1
   2b:	f8f40ca3          	sb	a5,-103(s0)
@@ -65,36 +64,4 @@ Disassembly of section .text:
   b5:	7466                	ld	s0,120(sp)
   b7:	6109                	addi	sp,sp,128
   b9:	8082                	ret
-=======
-  25:	faf408a3          	sb	a5,-79(s0)
-  29:	fb840793          	addi	a5,s0,-72
-  2d:	fef43423          	sd	a5,-24(s0)
-  31:	fb440793          	addi	a5,s0,-76
-  35:	fef43023          	sd	a5,-32(s0)
-  39:	fb240793          	addi	a5,s0,-78
-  3d:	fcf43c23          	sd	a5,-40(s0)
-  41:	fb140793          	addi	a5,s0,-79
-  45:	fcf43823          	sd	a5,-48(s0)
-  49:	fc043423          	sd	zero,-56(s0)
-  4d:	fc042223          	sw	zero,-60(s0)
-  51:	fc041123          	sh	zero,-62(s0)
-  55:	fc0400a3          	sb	zero,-63(s0)
-  59:	fe843783          	ld	a5,-24(s0)
-  5d:	fc843703          	ld	a4,-56(s0)
-  61:	00e7b07b          	esd	a4,0(a5)
-  65:	fe043783          	ld	a5,-32(s0)
-  69:	fc442703          	lw	a4,-60(s0)
-  6d:	00e7a07b          	esw	a4,0(a5)
-  71:	fd843783          	ld	a5,-40(s0)
-  75:	fc245703          	lhu	a4,-62(s0)
-  79:	00e7907b          	esh	a4,0(a5)
-  7d:	fd043783          	ld	a5,-48(s0)
-  81:	fc144703          	lbu	a4,-63(s0)
-  85:	00e7807b          	esb	a4,0(a5)
-  89:	4781                	li	a5,0
-  8b:	853e                	mv	a0,a5
-  8d:	6466                	ld	s0,88(sp)
-  8f:	6125                	addi	sp,sp,96
-  91:	8082                	ret
->>>>>>> 594f9eced7d80945211188688d7b71cc89df8e7c
 	...
