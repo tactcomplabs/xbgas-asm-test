@@ -1,0 +1,309 @@
+
+xbgas.o:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <TestFunc>:
+   0:	0000b577          	eld	a0,0(ra)
+   4:	00013577          	eld	a0,0(sp)
+   8:	0001b577          	eld	a0,0(gp)
+   c:	00023577          	eld	a0,0(tp) # 0 <TestFunc>
+  10:	0002b577          	eld	a0,0(t0)
+  14:	00033577          	eld	a0,0(t1)
+  18:	0003b577          	eld	a0,0(t2)
+  1c:	00043577          	eld	a0,0(s0)
+  20:	0004b577          	eld	a0,0(s1)
+  24:	00053577          	eld	a0,0(a0)
+  28:	0005b5f7          	eld	a1,0(a1)
+  2c:	00063677          	eld	a2,0(a2)
+  30:	0006b6f7          	eld	a3,0(a3)
+  34:	00073777          	eld	a4,0(a4)
+  38:	0007b7f7          	eld	a5,0(a5)
+  3c:	00083877          	eld	a6,0(a6)
+  40:	0008b8f7          	eld	a7,0(a7)
+  44:	00003577          	eld	a0,0(zero) # 0 <TestFunc>
+  48:	0000b5f7          	eld	a1,0(ra)
+  4c:	00013677          	eld	a2,0(sp)
+  50:	0001b6f7          	eld	a3,0(gp)
+  54:	00023777          	eld	a4,0(tp) # 0 <TestFunc>
+  58:	0002b7f7          	eld	a5,0(t0)
+  5c:	00033877          	eld	a6,0(t1)
+  60:	0003b8f7          	eld	a7,0(t2)
+  64:	00043977          	eld	s2,0(s0)
+  68:	0004b9f7          	eld	s3,0(s1)
+  6c:	00053a77          	eld	s4,0(a0)
+  70:	0005baf7          	eld	s5,0(a1)
+  74:	00063b77          	eld	s6,0(a2)
+  78:	0006bbf7          	eld	s7,0(a3)
+  7c:	00073c77          	eld	s8,0(a4)
+  80:	0007bcf7          	eld	s9,0(a5)
+  84:	00083d77          	eld	s10,0(a6)
+  88:	0008bdf7          	eld	s11,0(a7)
+  8c:	00093e77          	eld	t3,0(s2)
+  90:	0009bef7          	eld	t4,0(s3)
+  94:	000a3f77          	eld	t5,0(s4)
+  98:	000abff7          	eld	t6,0(s5)
+  9c:	0000a577          	elw	a0,0(ra)
+  a0:	00012577          	elw	a0,0(sp)
+  a4:	0001a577          	elw	a0,0(gp)
+  a8:	00022577          	elw	a0,0(tp) # 0 <TestFunc>
+  ac:	0002a577          	elw	a0,0(t0)
+  b0:	00032577          	elw	a0,0(t1)
+  b4:	0003a577          	elw	a0,0(t2)
+  b8:	00042577          	elw	a0,0(s0)
+  bc:	0004a577          	elw	a0,0(s1)
+  c0:	00052577          	elw	a0,0(a0)
+  c4:	0005a5f7          	elw	a1,0(a1)
+  c8:	00062677          	elw	a2,0(a2)
+  cc:	0006a6f7          	elw	a3,0(a3)
+  d0:	00072777          	elw	a4,0(a4)
+  d4:	0007a7f7          	elw	a5,0(a5)
+  d8:	00082877          	elw	a6,0(a6)
+  dc:	0008a8f7          	elw	a7,0(a7)
+  e0:	00002577          	elw	a0,0(zero) # 0 <TestFunc>
+  e4:	0000a5f7          	elw	a1,0(ra)
+  e8:	00012677          	elw	a2,0(sp)
+  ec:	0001a6f7          	elw	a3,0(gp)
+  f0:	00022777          	elw	a4,0(tp) # 0 <TestFunc>
+  f4:	0002a7f7          	elw	a5,0(t0)
+  f8:	00032877          	elw	a6,0(t1)
+  fc:	0003a8f7          	elw	a7,0(t2)
+ 100:	00042977          	elw	s2,0(s0)
+ 104:	0004a9f7          	elw	s3,0(s1)
+ 108:	00052a77          	elw	s4,0(a0)
+ 10c:	0005aaf7          	elw	s5,0(a1)
+ 110:	00062b77          	elw	s6,0(a2)
+ 114:	0006abf7          	elw	s7,0(a3)
+ 118:	00072c77          	elw	s8,0(a4)
+ 11c:	0007acf7          	elw	s9,0(a5)
+ 120:	00082d77          	elw	s10,0(a6)
+ 124:	0008adf7          	elw	s11,0(a7)
+ 128:	00092e77          	elw	t3,0(s2)
+ 12c:	0009aef7          	elw	t4,0(s3)
+ 130:	000a2f77          	elw	t5,0(s4)
+ 134:	000aaff7          	elw	t6,0(s5)
+ 138:	00009577          	elh	a0,0(ra)
+ 13c:	00011577          	elh	a0,0(sp)
+ 140:	00019577          	elh	a0,0(gp)
+ 144:	00021577          	elh	a0,0(tp) # 0 <TestFunc>
+ 148:	00029577          	elh	a0,0(t0)
+ 14c:	00031577          	elh	a0,0(t1)
+ 150:	00039577          	elh	a0,0(t2)
+ 154:	00041577          	elh	a0,0(s0)
+ 158:	00049577          	elh	a0,0(s1)
+ 15c:	00051577          	elh	a0,0(a0)
+ 160:	000595f7          	elh	a1,0(a1)
+ 164:	00061677          	elh	a2,0(a2)
+ 168:	000696f7          	elh	a3,0(a3)
+ 16c:	00071777          	elh	a4,0(a4)
+ 170:	000797f7          	elh	a5,0(a5)
+ 174:	00081877          	elh	a6,0(a6)
+ 178:	000898f7          	elh	a7,0(a7)
+ 17c:	00001577          	elh	a0,0(zero) # 0 <TestFunc>
+ 180:	000095f7          	elh	a1,0(ra)
+ 184:	00011677          	elh	a2,0(sp)
+ 188:	000196f7          	elh	a3,0(gp)
+ 18c:	00021777          	elh	a4,0(tp) # 0 <TestFunc>
+ 190:	000297f7          	elh	a5,0(t0)
+ 194:	00031877          	elh	a6,0(t1)
+ 198:	000398f7          	elh	a7,0(t2)
+ 19c:	00041977          	elh	s2,0(s0)
+ 1a0:	000499f7          	elh	s3,0(s1)
+ 1a4:	00051a77          	elh	s4,0(a0)
+ 1a8:	00059af7          	elh	s5,0(a1)
+ 1ac:	00061b77          	elh	s6,0(a2)
+ 1b0:	00069bf7          	elh	s7,0(a3)
+ 1b4:	00071c77          	elh	s8,0(a4)
+ 1b8:	00079cf7          	elh	s9,0(a5)
+ 1bc:	00081d77          	elh	s10,0(a6)
+ 1c0:	00089df7          	elh	s11,0(a7)
+ 1c4:	00091e77          	elh	t3,0(s2)
+ 1c8:	00099ef7          	elh	t4,0(s3)
+ 1cc:	000a1f77          	elh	t5,0(s4)
+ 1d0:	000a9ff7          	elh	t6,0(s5)
+ 1d4:	00008577          	elb	a0,0(ra)
+ 1d8:	00010577          	elb	a0,0(sp)
+ 1dc:	00018577          	elb	a0,0(gp)
+ 1e0:	00020577          	elb	a0,0(tp) # 0 <TestFunc>
+ 1e4:	00028577          	elb	a0,0(t0)
+ 1e8:	00030577          	elb	a0,0(t1)
+ 1ec:	00038577          	elb	a0,0(t2)
+ 1f0:	00040577          	elb	a0,0(s0)
+ 1f4:	00048577          	elb	a0,0(s1)
+ 1f8:	00050577          	elb	a0,0(a0)
+ 1fc:	000585f7          	elb	a1,0(a1)
+ 200:	00060677          	elb	a2,0(a2)
+ 204:	000686f7          	elb	a3,0(a3)
+ 208:	00070777          	elb	a4,0(a4)
+ 20c:	000787f7          	elb	a5,0(a5)
+ 210:	00080877          	elb	a6,0(a6)
+ 214:	000888f7          	elb	a7,0(a7)
+ 218:	00000577          	elb	a0,0(zero) # 0 <TestFunc>
+ 21c:	000085f7          	elb	a1,0(ra)
+ 220:	00010677          	elb	a2,0(sp)
+ 224:	000186f7          	elb	a3,0(gp)
+ 228:	00020777          	elb	a4,0(tp) # 0 <TestFunc>
+ 22c:	000287f7          	elb	a5,0(t0)
+ 230:	00030877          	elb	a6,0(t1)
+ 234:	000388f7          	elb	a7,0(t2)
+ 238:	00040977          	elb	s2,0(s0)
+ 23c:	000489f7          	elb	s3,0(s1)
+ 240:	00050a77          	elb	s4,0(a0)
+ 244:	00058af7          	elb	s5,0(a1)
+ 248:	00060b77          	elb	s6,0(a2)
+ 24c:	00068bf7          	elb	s7,0(a3)
+ 250:	00070c77          	elb	s8,0(a4)
+ 254:	00078cf7          	elb	s9,0(a5)
+ 258:	00080d77          	elb	s10,0(a6)
+ 25c:	00088df7          	elb	s11,0(a7)
+ 260:	00090e77          	elb	t3,0(s2)
+ 264:	00098ef7          	elb	t4,0(s3)
+ 268:	000a0f77          	elb	t5,0(s4)
+ 26c:	000a8ff7          	elb	t6,0(s5)
+ 270:	0000d577          	elhu	a0,0(ra)
+ 274:	00015577          	elhu	a0,0(sp)
+ 278:	0001d577          	elhu	a0,0(gp)
+ 27c:	00025577          	elhu	a0,0(tp) # 0 <TestFunc>
+ 280:	0002d577          	elhu	a0,0(t0)
+ 284:	00035577          	elhu	a0,0(t1)
+ 288:	0003d577          	elhu	a0,0(t2)
+ 28c:	00045577          	elhu	a0,0(s0)
+ 290:	0004d577          	elhu	a0,0(s1)
+ 294:	00055577          	elhu	a0,0(a0)
+ 298:	0005d5f7          	elhu	a1,0(a1)
+ 29c:	00065677          	elhu	a2,0(a2)
+ 2a0:	0006d6f7          	elhu	a3,0(a3)
+ 2a4:	00075777          	elhu	a4,0(a4)
+ 2a8:	0007d7f7          	elhu	a5,0(a5)
+ 2ac:	00085877          	elhu	a6,0(a6)
+ 2b0:	0008d8f7          	elhu	a7,0(a7)
+ 2b4:	00005577          	elhu	a0,0(zero) # 0 <TestFunc>
+ 2b8:	0000d5f7          	elhu	a1,0(ra)
+ 2bc:	00015677          	elhu	a2,0(sp)
+ 2c0:	0001d6f7          	elhu	a3,0(gp)
+ 2c4:	00025777          	elhu	a4,0(tp) # 0 <TestFunc>
+ 2c8:	0002d7f7          	elhu	a5,0(t0)
+ 2cc:	00035877          	elhu	a6,0(t1)
+ 2d0:	0003d8f7          	elhu	a7,0(t2)
+ 2d4:	00045977          	elhu	s2,0(s0)
+ 2d8:	0004d9f7          	elhu	s3,0(s1)
+ 2dc:	00055a77          	elhu	s4,0(a0)
+ 2e0:	0005daf7          	elhu	s5,0(a1)
+ 2e4:	00065b77          	elhu	s6,0(a2)
+ 2e8:	0006dbf7          	elhu	s7,0(a3)
+ 2ec:	00075c77          	elhu	s8,0(a4)
+ 2f0:	0007dcf7          	elhu	s9,0(a5)
+ 2f4:	00085d77          	elhu	s10,0(a6)
+ 2f8:	0008ddf7          	elhu	s11,0(a7)
+ 2fc:	00095e77          	elhu	t3,0(s2)
+ 300:	0009def7          	elhu	t4,0(s3)
+ 304:	000a5f77          	elhu	t5,0(s4)
+ 308:	000adff7          	elhu	t6,0(s5)
+ 30c:	0000c577          	elbu	a0,0(ra)
+ 310:	00014577          	elbu	a0,0(sp)
+ 314:	0001c577          	elbu	a0,0(gp)
+ 318:	00024577          	elbu	a0,0(tp) # 0 <TestFunc>
+ 31c:	0002c577          	elbu	a0,0(t0)
+ 320:	00034577          	elbu	a0,0(t1)
+ 324:	0003c577          	elbu	a0,0(t2)
+ 328:	00044577          	elbu	a0,0(s0)
+ 32c:	0004c577          	elbu	a0,0(s1)
+ 330:	00054577          	elbu	a0,0(a0)
+ 334:	0005c5f7          	elbu	a1,0(a1)
+ 338:	00064677          	elbu	a2,0(a2)
+ 33c:	0006c6f7          	elbu	a3,0(a3)
+ 340:	00074777          	elbu	a4,0(a4)
+ 344:	0007c7f7          	elbu	a5,0(a5)
+ 348:	00084877          	elbu	a6,0(a6)
+ 34c:	0008c8f7          	elbu	a7,0(a7)
+ 350:	00004577          	elbu	a0,0(zero) # 0 <TestFunc>
+ 354:	0000c5f7          	elbu	a1,0(ra)
+ 358:	00014677          	elbu	a2,0(sp)
+ 35c:	0001c6f7          	elbu	a3,0(gp)
+ 360:	00024777          	elbu	a4,0(tp) # 0 <TestFunc>
+ 364:	0002c7f7          	elbu	a5,0(t0)
+ 368:	00034877          	elbu	a6,0(t1)
+ 36c:	0003c8f7          	elbu	a7,0(t2)
+ 370:	00044977          	elbu	s2,0(s0)
+ 374:	0004c9f7          	elbu	s3,0(s1)
+ 378:	00054a77          	elbu	s4,0(a0)
+ 37c:	0005caf7          	elbu	s5,0(a1)
+ 380:	00064b77          	elbu	s6,0(a2)
+ 384:	0006cbf7          	elbu	s7,0(a3)
+ 388:	00074c77          	elbu	s8,0(a4)
+ 38c:	0007ccf7          	elbu	s9,0(a5)
+ 390:	00084d77          	elbu	s10,0(a6)
+ 394:	0008cdf7          	elbu	s11,0(a7)
+ 398:	00094e77          	elbu	t3,0(s2)
+ 39c:	0009cef7          	elbu	t4,0(s3)
+ 3a0:	000a4f77          	elbu	t5,0(s4)
+ 3a4:	000acff7          	elbu	t6,0(s5)
+ 3a8:	0000f003          	eaddix	e0,0,e1
+ 3ac:	0001f103          	eaddix	e2,0,e3
+ 3b0:	0002f203          	eaddix	e4,0,e5
+ 3b4:	0003f303          	eaddix	e6,0,e7
+ 3b8:	0004f403          	eaddix	e8,0,e9
+ 3bc:	0005f503          	eaddix	e10,0,e11
+ 3c0:	0006f603          	eaddix	e12,0,e13
+ 3c4:	0007f703          	eaddix	e14,0,e15
+ 3c8:	0008f803          	eaddix	e16,0,e17
+ 3cc:	0009f903          	eaddix	e18,0,e19
+ 3d0:	000afa03          	eaddix	e20,0,e21
+ 3d4:	000bfb03          	eaddix	e22,0,e23
+ 3d8:	000cfc03          	eaddix	e24,0,e25
+ 3dc:	000dfd03          	eaddix	e26,0,e27
+ 3e0:	000efe03          	eaddix	e28,0,e29
+ 3e4:	000fff03          	eaddix	e30,0,e31
+
+00000000000003e8 <LoadTests>:
+ 3e8:	028fb7f7          	eld	a5,40(t6)
+ 3ec:	028fa7f7          	elw	a5,40(t6)
+ 3f0:	028f97f7          	elh	a5,40(t6)
+ 3f4:	028f87f7          	elb	a5,40(t6)
+ 3f8:	028fd7f7          	elhu	a5,40(t6)
+ 3fc:	028fc7f7          	elbu	a5,40(t6)
+ 400:	028fe7f7          	elq	a5,40(t6)
+ 404:	028ff577          	ele	e10,40(t6)
+
+0000000000000408 <StoreTests>:
+ 408:	02ffb47b          	esd	a5,40(t6)
+ 40c:	02ffa47b          	esw	a5,40(t6)
+ 410:	02ff947b          	esh	a5,40(t6)
+ 414:	02ff847b          	esb	a5,40(t6)
+ 418:	02ffc47b          	esq	a5,40(t6)
+ 41c:	02afd47b          	ese	e10,40(t6)
+
+0000000000000420 <RawLoadStoreTests>:
+ 420:	aaa837b3          	erld	a5,a6,e10
+ 424:	aaa827b3          	erlw	a5,a6,e10
+ 428:	aaa817b3          	erlh	a5,a6,e10
+ 42c:	aaa807b3          	erlb	a5,a6,e10
+ 430:	aaa857b3          	erlhu	a5,a6,e10
+ 434:	aaa847b3          	erlbu	a5,a6,e10
+ 438:	44a7b7b3          	ersd	a5,a5,e10
+ 43c:	44a7a7b3          	ersw	a5,a5,e10
+ 440:	44a797b3          	ersh	a5,a5,e10
+ 444:	44a787b3          	ersb	a5,a5,e10
+ 448:	46b7b533          	erse	e10,a5,e11
+ 44c:	fe0567fb          	eaddi	a5,-32,e10
+ 450:	ff0567fb          	eaddi	a5,-16,e10
+ 454:	ff8567fb          	eaddi	a5,-8,e10
+ 458:	000567fb          	eaddi	a5,0,e10
+ 45c:	008567fb          	eaddi	a5,8,e10
+ 460:	010567fb          	eaddi	a5,16,e10
+ 464:	020567fb          	eaddi	a5,32,e10
+ 468:	fe07f57b          	eaddie	e10,-32,a5
+ 46c:	ff07f57b          	eaddie	e10,-16,a5
+ 470:	ff87f57b          	eaddie	e10,-8,a5
+ 474:	0007f57b          	eaddie	e10,0,a5
+ 478:	0087f57b          	eaddie	e10,8,a5
+ 47c:	0107f57b          	eaddie	e10,16,a5
+ 480:	0207f57b          	eaddie	e10,32,a5
+ 484:	fe057a83          	eaddix	e21,-32,e10
+ 488:	ff057a83          	eaddix	e21,-16,e10
+ 48c:	ff857a83          	eaddix	e21,-8,e10
+ 490:	00057a83          	eaddix	e21,0,e10
+ 494:	00857a83          	eaddix	e21,8,e10
+ 498:	01057a83          	eaddix	e21,16,e10
+ 49c:	02057a83          	eaddix	e21,32,e10
