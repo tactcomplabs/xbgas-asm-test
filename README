@@ -13,7 +13,9 @@ II.	USAGE:
    Using the included makefile, execute all the tests using "make".  Any issues
    with the included tests and/or known failures will be reported as build failures.
 
-   $> make
+   $> make rv64
+   ..or..
+   $> make rv32
 
 ---------------------------------------------------
 EOF
