@@ -1,49 +1,49 @@
 
-xbgas.o:     file format elf64-littleriscv
+xbgas.o:     file format elf32-littleriscv
 
 
 Disassembly of section .text:
 
-0000000000000000 <TestFunc>:
-   0:	0000b577          	eld	a0,0(ra)
-   4:	00013577          	eld	a0,0(sp)
-   8:	0001b577          	eld	a0,0(gp)
-   c:	00023577          	eld	a0,0(tp) # 0 <TestFunc>
-  10:	0002b577          	eld	a0,0(t0)
-  14:	00033577          	eld	a0,0(t1)
-  18:	0003b577          	eld	a0,0(t2)
-  1c:	00043577          	eld	a0,0(s0)
-  20:	0004b577          	eld	a0,0(s1)
-  24:	00053577          	eld	a0,0(a0)
-  28:	0005b5f7          	eld	a1,0(a1)
-  2c:	00063677          	eld	a2,0(a2)
-  30:	0006b6f7          	eld	a3,0(a3)
-  34:	00073777          	eld	a4,0(a4)
-  38:	0007b7f7          	eld	a5,0(a5)
-  3c:	00083877          	eld	a6,0(a6)
-  40:	0008b8f7          	eld	a7,0(a7)
-  44:	00003577          	eld	a0,0(zero) # 0 <TestFunc>
-  48:	0000b5f7          	eld	a1,0(ra)
-  4c:	00013677          	eld	a2,0(sp)
-  50:	0001b6f7          	eld	a3,0(gp)
-  54:	00023777          	eld	a4,0(tp) # 0 <TestFunc>
-  58:	0002b7f7          	eld	a5,0(t0)
-  5c:	00033877          	eld	a6,0(t1)
-  60:	0003b8f7          	eld	a7,0(t2)
-  64:	00043977          	eld	s2,0(s0)
-  68:	0004b9f7          	eld	s3,0(s1)
-  6c:	00053a77          	eld	s4,0(a0)
-  70:	0005baf7          	eld	s5,0(a1)
-  74:	00063b77          	eld	s6,0(a2)
-  78:	0006bbf7          	eld	s7,0(a3)
-  7c:	00073c77          	eld	s8,0(a4)
-  80:	0007bcf7          	eld	s9,0(a5)
-  84:	00083d77          	eld	s10,0(a6)
-  88:	0008bdf7          	eld	s11,0(a7)
-  8c:	00093e77          	eld	t3,0(s2)
-  90:	0009bef7          	eld	t4,0(s3)
-  94:	000a3f77          	eld	t5,0(s4)
-  98:	000abff7          	eld	t6,0(s5)
+00000000 <TestFunc>:
+   0:	0000a577          	elw	a0,0(ra)
+   4:	00012577          	elw	a0,0(sp)
+   8:	0001a577          	elw	a0,0(gp)
+   c:	00022577          	elw	a0,0(tp) # 0 <TestFunc>
+  10:	0002a577          	elw	a0,0(t0)
+  14:	00032577          	elw	a0,0(t1)
+  18:	0003a577          	elw	a0,0(t2)
+  1c:	00042577          	elw	a0,0(s0)
+  20:	0004a577          	elw	a0,0(s1)
+  24:	00052577          	elw	a0,0(a0)
+  28:	0005a5f7          	elw	a1,0(a1)
+  2c:	00062677          	elw	a2,0(a2)
+  30:	0006a6f7          	elw	a3,0(a3)
+  34:	00072777          	elw	a4,0(a4)
+  38:	0007a7f7          	elw	a5,0(a5)
+  3c:	00082877          	elw	a6,0(a6)
+  40:	0008a8f7          	elw	a7,0(a7)
+  44:	00002577          	elw	a0,0(zero) # 0 <TestFunc>
+  48:	0000a5f7          	elw	a1,0(ra)
+  4c:	00012677          	elw	a2,0(sp)
+  50:	0001a6f7          	elw	a3,0(gp)
+  54:	00022777          	elw	a4,0(tp) # 0 <TestFunc>
+  58:	0002a7f7          	elw	a5,0(t0)
+  5c:	00032877          	elw	a6,0(t1)
+  60:	0003a8f7          	elw	a7,0(t2)
+  64:	00042977          	elw	s2,0(s0)
+  68:	0004a9f7          	elw	s3,0(s1)
+  6c:	00052a77          	elw	s4,0(a0)
+  70:	0005aaf7          	elw	s5,0(a1)
+  74:	00062b77          	elw	s6,0(a2)
+  78:	0006abf7          	elw	s7,0(a3)
+  7c:	00072c77          	elw	s8,0(a4)
+  80:	0007acf7          	elw	s9,0(a5)
+  84:	00082d77          	elw	s10,0(a6)
+  88:	0008adf7          	elw	s11,0(a7)
+  8c:	00092e77          	elw	t3,0(s2)
+  90:	0009aef7          	elw	t4,0(s3)
+  94:	000a2f77          	elw	t5,0(s4)
+  98:	000aaff7          	elw	t6,0(s5)
   9c:	0000a577          	elw	a0,0(ra)
   a0:	00012577          	elw	a0,0(sp)
   a4:	0001a577          	elw	a0,0(gp)
@@ -256,54 +256,47 @@ Disassembly of section .text:
  3e0:	000efe03          	eaddix	e28,0,e29
  3e4:	000fff03          	eaddix	e30,0,e31
 
-00000000000003e8 <LoadTests>:
- 3e8:	028fb7f7          	eld	a5,40(t6)
+000003e8 <LoadTests>:
+ 3e8:	028fa7f7          	elw	a5,40(t6)
  3ec:	028fa7f7          	elw	a5,40(t6)
  3f0:	028f97f7          	elh	a5,40(t6)
  3f4:	028f87f7          	elb	a5,40(t6)
  3f8:	028fd7f7          	elhu	a5,40(t6)
  3fc:	028fc7f7          	elbu	a5,40(t6)
- 400:	028fe7f7          	elq	a5,40(t6)
- 404:	028ff577          	ele	e10,40(t6)
 
-0000000000000408 <StoreTests>:
- 408:	02ffb47b          	esd	a5,40(t6)
- 40c:	02ffa47b          	esw	a5,40(t6)
- 410:	02ff947b          	esh	a5,40(t6)
- 414:	02ff847b          	esb	a5,40(t6)
- 418:	02ffc47b          	esq	a5,40(t6)
- 41c:	02afd47b          	ese	e10,40(t6)
+00000400 <StoreTests>:
+ 400:	02ffa47b          	esw	a5,40(t6)
+ 404:	02ff947b          	esh	a5,40(t6)
+ 408:	02ff847b          	esb	a5,40(t6)
 
-0000000000000420 <RawLoadStoreTests>:
- 420:	aaa837b3          	erld	a5,a6,e10
- 424:	aaa827b3          	erlw	a5,a6,e10
- 428:	aaa817b3          	erlh	a5,a6,e10
- 42c:	aaa807b3          	erlb	a5,a6,e10
- 430:	aaa857b3          	erlhu	a5,a6,e10
- 434:	aaa847b3          	erlbu	a5,a6,e10
- 438:	44a7b7b3          	ersd	a5,a5,e10
- 43c:	44a7a7b3          	ersw	a5,a5,e10
- 440:	44a797b3          	ersh	a5,a5,e10
- 444:	44a787b3          	ersb	a5,a5,e10
- 448:	46b7b533          	erse	e10,a5,e11
- 44c:	fe0567fb          	eaddi	a5,-32,e10
- 450:	ff0567fb          	eaddi	a5,-16,e10
- 454:	ff8567fb          	eaddi	a5,-8,e10
- 458:	000567fb          	eaddi	a5,0,e10
- 45c:	008567fb          	eaddi	a5,8,e10
- 460:	010567fb          	eaddi	a5,16,e10
- 464:	020567fb          	eaddi	a5,32,e10
- 468:	fe07f57b          	eaddie	e10,-32,a5
- 46c:	ff07f57b          	eaddie	e10,-16,a5
- 470:	ff87f57b          	eaddie	e10,-8,a5
- 474:	0007f57b          	eaddie	e10,0,a5
- 478:	0087f57b          	eaddie	e10,8,a5
- 47c:	0107f57b          	eaddie	e10,16,a5
- 480:	0207f57b          	eaddie	e10,32,a5
- 484:	fe057a83          	eaddix	e21,-32,e10
- 488:	ff057a83          	eaddix	e21,-16,e10
- 48c:	ff857a83          	eaddix	e21,-8,e10
- 490:	00057a83          	eaddix	e21,0,e10
- 494:	00857a83          	eaddix	e21,8,e10
- 498:	01057a83          	eaddix	e21,16,e10
- 49c:	02057a83          	eaddix	e21,32,e10
+0000040c <RawLoadStoreTests>:
+ 40c:	aaa827b3          	erlw	a5,a6,e10
+ 410:	aaa817b3          	erlh	a5,a6,e10
+ 414:	aaa807b3          	erlb	a5,a6,e10
+ 418:	aaa857b3          	erlhu	a5,a6,e10
+ 41c:	aaa847b3          	erlbu	a5,a6,e10
+ 420:	44a7a7b3          	ersw	a5,a5,e10
+ 424:	44a797b3          	ersh	a5,a5,e10
+ 428:	44a787b3          	ersb	a5,a5,e10
+ 42c:	46b7b533          	erse	e10,a5,e11
+ 430:	fe0567fb          	eaddi	a5,-32,e10
+ 434:	ff0567fb          	eaddi	a5,-16,e10
+ 438:	ff8567fb          	eaddi	a5,-8,e10
+ 43c:	000567fb          	eaddi	a5,0,e10
+ 440:	008567fb          	eaddi	a5,8,e10
+ 444:	010567fb          	eaddi	a5,16,e10
+ 448:	020567fb          	eaddi	a5,32,e10
+ 44c:	fe07f57b          	eaddie	e10,-32,a5
+ 450:	ff07f57b          	eaddie	e10,-16,a5
+ 454:	ff87f57b          	eaddie	e10,-8,a5
+ 458:	0007f57b          	eaddie	e10,0,a5
+ 45c:	0087f57b          	eaddie	e10,8,a5
+ 460:	0107f57b          	eaddie	e10,16,a5
+ 464:	0207f57b          	eaddie	e10,32,a5
+ 468:	fe057a83          	eaddix	e21,-32,e10
+ 46c:	ff057a83          	eaddix	e21,-16,e10
+ 470:	ff857a83          	eaddix	e21,-8,e10
+ 474:	00057a83          	eaddix	e21,0,e10
+ 478:	00857a83          	eaddix	e21,8,e10
+ 47c:	01057a83          	eaddix	e21,16,e10
+ 480:	02057a83          	eaddix	e21,32,e10

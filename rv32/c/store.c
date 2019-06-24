@@ -33,27 +33,7 @@ int main(int argc, char **argv ){
   uint32_t U32 = 0x02ul;
   uint16_t U16 = 0x02ul;
   uint8_t U8   = 0x02ul;
-  
-	//printf("P_64 = %x\n", P_U64);
-  //printf("P_32 = %x\n", P_U32);
-  //printf("P_16 = %x\n", P_U16);
-  //printf("P_8 = %x\n", P_U8);
-  /* ESQ */
-  asm volatile
-  (
-    " esq %[x],0(%[z])\n\t"
-		:
-    : [z] "r" (P_U128), [x] "r" (U128)
-  );
 
-  /* ESD */
-  asm volatile
-  (
-    " esd %[x],0(%[z])\n\t"
-		:
-    : [z] "r" (P_U64),  [x] "r" (U64)
-  );
- 
   /* ESW */
   asm volatile
   (

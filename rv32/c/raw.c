@@ -33,13 +33,11 @@ int main(int argc, char **argv ){
 
 
   /* raw load/stores */
-  asm("erld a5,a6,e10");
   asm("erlw a5,a6,e10");
   asm("erlh a5,a6,e10");
   asm("erlb a5,a6,e10");
   asm("erlhu a5,a6,e10");
   asm("erlbu a5,a6,e10");
-  asm("ersd a5,a5,e10");
   asm("ersw a5,a5,e10");
   asm("ersh a5,a5,e10");
   asm("ersb a5,a5,e10");

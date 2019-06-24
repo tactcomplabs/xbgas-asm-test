@@ -67,14 +67,6 @@ int main(int argc, char **argv ){
 		: [e10] "r" 	(EXT) 
 	);
 
-  /* ERSD */
-  asm volatile
-  (
-    " ersd %[x], %[z], e10 \n\t"
-    : 
-    : [x] "r" (U64), [z] "r" (P_U64), [e10] "r" (EXT)
-  );
-
   /* ERSW */
   asm volatile
   (
@@ -105,14 +97,6 @@ int main(int argc, char **argv ){
     " erse e8, %[z], e10 \n\t"
     : 
     : [e8] "r" (U32), [z] "r" (P_U32), [e10] "r" (EXT)
-  );
-
-  /* ERLD */
-  asm volatile
-  (
-    " erld %[z],%[x],e10 \n\t"
-    : [z] "=r" (U64)
-    : [x] "r"  (P_U64), [e10] "r" (1)
   );
 
   /* ERLW */
@@ -153,14 +137,6 @@ int main(int argc, char **argv ){
     " erlbu %[z],%[x],e10 \n\t"
     : [z] "=r" (U8)
     : [x] "r"  (P_U8), [e10] "r" (1)
-  );
-
-  /* ERLE */
-  asm volatile
-  (
-    " erle e3,%[x],e10 \n\t"
-    : [e3] 	"=r" (U64)
-    : [x] 	"r"  (P_U64), [e10] "r" (1)
   );
 
   /*

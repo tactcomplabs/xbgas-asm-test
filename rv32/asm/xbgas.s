@@ -7,45 +7,45 @@
 TestFunc:
 RegisterTests:
         #-- register tests
-        eld     a0,0(ra)
-        eld     a0,0(sp)
-        eld     a0,0(gp)
-        eld     a0,0(tp)
-        eld     a0,0(t0)
-        eld     a0,0(t1)
-        eld     a0,0(t2)
-        eld     a0,0(s0)
-        eld     a0,0(s1)
-        eld     a0,0(a0)
-        eld     a1,0(a1)
-        eld     a2,0(a2)
-        eld     a3,0(a3)
-        eld     a4,0(a4)
-        eld     a5,0(a5)
-        eld     a6,0(a6)
-        eld     a7,0(a7)
-        eld     x10,0(x0)
-        eld     x11,0(x1)
-        eld     x12,0(x2)
-        eld     x13,0(x3)
-        eld     x14,0(x4)
-        eld     x15,0(x5)
-        eld     x16,0(x6)
-        eld     x17,0(x7)
-        eld     x18,0(x8)
-        eld     x19,0(x9)
-        eld     x20,0(x10)
-        eld     x21,0(x11)
-        eld     x22,0(x12)
-        eld     x23,0(x13)
-        eld     x24,0(x14)
-        eld     x25,0(x15)
-        eld     x26,0(x16)
-        eld     x27,0(x17)
-        eld     x28,0(x18)
-        eld     x29,0(x19)
-        eld     x30,0(x20)
-        eld     x31,0(x21)
+        elw     a0,0(ra)
+        elw     a0,0(sp)
+        elw     a0,0(gp)
+        elw     a0,0(tp)
+        elw     a0,0(t0)
+        elw     a0,0(t1)
+        elw     a0,0(t2)
+        elw     a0,0(s0)
+        elw     a0,0(s1)
+        elw     a0,0(a0)
+        elw     a1,0(a1)
+        elw     a2,0(a2)
+        elw     a3,0(a3)
+        elw     a4,0(a4)
+        elw     a5,0(a5)
+        elw     a6,0(a6)
+        elw     a7,0(a7)
+        elw     x10,0(x0)
+        elw     x11,0(x1)
+        elw     x12,0(x2)
+        elw     x13,0(x3)
+        elw     x14,0(x4)
+        elw     x15,0(x5)
+        elw     x16,0(x6)
+        elw     x17,0(x7)
+        elw     x18,0(x8)
+        elw     x19,0(x9)
+        elw     x20,0(x10)
+        elw     x21,0(x11)
+        elw     x22,0(x12)
+        elw     x23,0(x13)
+        elw     x24,0(x14)
+        elw     x25,0(x15)
+        elw     x26,0(x16)
+        elw     x27,0(x17)
+        elw     x28,0(x18)
+        elw     x29,0(x19)
+        elw     x30,0(x20)
+        elw     x31,0(x21)
 
         elw     a0,0(ra)
         elw     a0,0(sp)
@@ -265,33 +265,26 @@ RegisterTests:
         eaddix  e30,0,e31
 LoadTests:
         #-- loads
-        eld     a5,40(x31)
+        elw     a5,40(x31)
         elw     a5,40(x31)
         elh     a5,40(x31)
         elb     a5,40(x31)
         elhu    a5,40(x31)
         elbu    a5,40(x31)
         #-- extended quad loads
-        elq     a5,40(x31)
-        ele     e10,40(x31)
 StoreTests:
         #-- stores
-        esd     a5,40(x31)
         esw     a5,40(x31)
         esh     a5,40(x31)
         esb     a5,40(x31)
         #-- extended quad stores
-        esq     a5,40(x31)
-        ese     e10,40(x31)
 RawLoadStoreTests:
         #-- raw load/stores
-        erld    a5,a6,e10
         erlw    a5,a6,e10
         erlh    a5,a6,e10
         erlb    a5,a6,e10
         erlhu   a5,a6,e10
         erlbu   a5,a6,e10
-        ersd    a5,a5,e10
         ersw    a5,a5,e10
         ersh    a5,a5,e10
         ersb    a5,a5,e10

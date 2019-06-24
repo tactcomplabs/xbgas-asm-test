@@ -16,13 +16,13 @@ help:
 runtest-rv32: build-test-rv32 disass-test-rv32 check-dis-rv32 knownfail-rv32 ctest-rv32 allsuccess
 runtest-rv64: build-test-rv64 disass-test-rv64 check-dis-rv64 knownfail-rv64 ctest-rv64 allsuccess
 build-test-rv32: rv32/asm/xbgas.s
-	@echo "...building $<"; CC=$(RISCV)/bin/riscv32-unknown-elf-gcc; $(CC) -c -o xbgas.o rv32/asm/xbgas.s
+	@echo "...building $<"; $(RISCV)/bin/riscv32-unknown-elf-gcc -c -o xbgas.o rv32/asm/xbgas.s
 disass-test-rv32: build-test-rv32 xbgas.o
-	@echo "...disass xbgas.o"; OBJDUMP=$(RISCV)/bin/riscv32-unknown-elf-objdump; $(OBJDUMP) -dC xbgas.o >> xbgas.out 2>&1
+	@echo "...disass xbgas.o"; $(RISCV)/bin/riscv32-unknown-elf-objdump -dC xbgas.o >> xbgas.out 2>&1
 check-dis-rv32: disass-test-rv32 xbgas.out
 	@echo "...diffing xbgas.out"; diff xbgas.out rv32/asm/xbgas.disass
 knownfail-rv32:
-	cd rv32/knownfail && CC=$(RISCV)/bin/riscv32-unknown-elf-gcc; make
+	cd rv32/knownfail && export CC=$(RISCV)/bin/riscv32-unknown-elf-gcc &&  make
 ctest-rv32:
 	cd rv32/c && CC=$(RISCV)/bin/riscv32-unknown-elf-gcc; make
 build-test-rv64: rv64/asm/xbgas.s

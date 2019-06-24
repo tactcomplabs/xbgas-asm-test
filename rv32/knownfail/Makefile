@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CC=$(RISCV)/bin/riscv64-unknown-elf-gcc
+CC=$(RISCV)/bin/riscv32-unknown-elf-gcc
 SRCS = $(wildcard *.s)
 OBJS = $(SRCS:.s=.o)
 

@@ -1,0 +1,64 @@
+
+store.o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	f9010113          	addi	sp,sp,-112
+   4:	06812623          	sw	s0,108(sp)
+   8:	07010413          	addi	s0,sp,112
+   c:	f8a42e23          	sw	a0,-100(s0)
+  10:	f8b42c23          	sw	a1,-104(s0)
+  14:	00100793          	li	a5,1
+  18:	00000813          	li	a6,0
+  1c:	faf42c23          	sw	a5,-72(s0)
+  20:	fb042e23          	sw	a6,-68(s0)
+  24:	00100793          	li	a5,1
+  28:	00000813          	li	a6,0
+  2c:	faf42823          	sw	a5,-80(s0)
+  30:	fb042a23          	sw	a6,-76(s0)
+  34:	00100793          	li	a5,1
+  38:	faf42623          	sw	a5,-84(s0)
+  3c:	00100793          	li	a5,1
+  40:	faf41523          	sh	a5,-86(s0)
+  44:	00100793          	li	a5,1
+  48:	faf404a3          	sb	a5,-87(s0)
+  4c:	fb840793          	addi	a5,s0,-72
+  50:	fef42623          	sw	a5,-20(s0)
+  54:	fb040793          	addi	a5,s0,-80
+  58:	fef42423          	sw	a5,-24(s0)
+  5c:	fac40793          	addi	a5,s0,-84
+  60:	fef42223          	sw	a5,-28(s0)
+  64:	faa40793          	addi	a5,s0,-86
+  68:	fef42023          	sw	a5,-32(s0)
+  6c:	fa940793          	addi	a5,s0,-87
+  70:	fcf42e23          	sw	a5,-36(s0)
+  74:	00200793          	li	a5,2
+  78:	00000813          	li	a6,0
+  7c:	fcf42823          	sw	a5,-48(s0)
+  80:	fd042a23          	sw	a6,-44(s0)
+  84:	00100793          	li	a5,1
+  88:	00000813          	li	a6,0
+  8c:	fcf42423          	sw	a5,-56(s0)
+  90:	fd042623          	sw	a6,-52(s0)
+  94:	00200793          	li	a5,2
+  98:	fcf42223          	sw	a5,-60(s0)
+  9c:	00200793          	li	a5,2
+  a0:	fcf41123          	sh	a5,-62(s0)
+  a4:	00200793          	li	a5,2
+  a8:	fcf400a3          	sb	a5,-63(s0)
+  ac:	fe442783          	lw	a5,-28(s0)
+  b0:	fc442703          	lw	a4,-60(s0)
+  b4:	00e7a07b          	esw	a4,0(a5)
+  b8:	fe042783          	lw	a5,-32(s0)
+  bc:	fc245703          	lhu	a4,-62(s0)
+  c0:	00e7907b          	esh	a4,0(a5)
+  c4:	fdc42783          	lw	a5,-36(s0)
+  c8:	fc144703          	lbu	a4,-63(s0)
+  cc:	00e7807b          	esb	a4,0(a5)
+  d0:	00000793          	li	a5,0
+  d4:	00078513          	mv	a0,a5
+  d8:	06c12403          	lw	s0,108(sp)
+  dc:	07010113          	addi	sp,sp,112
+  e0:	00008067          	ret

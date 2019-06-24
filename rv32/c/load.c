@@ -34,21 +34,6 @@ int main(int argc, char **argv ){
   uint16_t U16 = 0x00;
   uint8_t U8   = 0;
 
-  /* ELQ */
-  asm volatile
-  (
-    " elq %[z],0(%[x])\n\t"
-    : [z] "=r" (U128)
-    : [x] "r" (P_U128)
-  );
-  /* ELD */
-  asm volatile
-  (
-    " eld %[z],0(%[x])\n\t"
-    : [z] "=r" (U64)
-    : [x] "r" (P_U64)
-  );
-
   /* ELW */
   asm volatile
   (

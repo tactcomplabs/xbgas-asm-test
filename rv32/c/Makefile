@@ -1,7 +1,7 @@
 #!/bin/sh
 
-CC=$(RISCV)/bin/riscv64-unknown-elf-gcc
-OBJDUMP=$(RISCV)/bin/riscv64-unknown-elf-objdump
+CC=$(RISCV)/bin/riscv32-unknown-elf-gcc
+OBJDUMP=$(RISCV)/bin/riscv32-unknown-elf-objdump
 SRCS = $(wildcard *.c)
 OBJS = $(SRCS:.c=.o)
 EXEC = $(OBJS:.o=.exe)

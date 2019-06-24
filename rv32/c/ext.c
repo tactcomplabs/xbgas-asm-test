@@ -33,12 +33,8 @@ int main(int argc, char **argv ){
 
 
   /* extended quad loads */
-  asm("elq a5,0(sp)");
-  asm("ele e11,0(sp)");
 
   /* extended quad stores */
-  asm("esq a5,0(sp)");
-  asm("ese e12,0(sp)");
 
   return 0;
 }
