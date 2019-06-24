@@ -1,0 +1,65 @@
+
+load.o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	f9010113          	addi	sp,sp,-112
+   4:	06812623          	sw	s0,108(sp)
+   8:	07010413          	addi	s0,sp,112
+   c:	f8a42e23          	sw	a0,-100(s0)
+  10:	f8b42c23          	sw	a1,-104(s0)
+  14:	00100793          	li	a5,1
+  18:	00000813          	li	a6,0
+  1c:	faf42c23          	sw	a5,-72(s0)
+  20:	fb042e23          	sw	a6,-68(s0)
+  24:	00100793          	li	a5,1
+  28:	00000813          	li	a6,0
+  2c:	faf42823          	sw	a5,-80(s0)
+  30:	fb042a23          	sw	a6,-76(s0)
+  34:	00100793          	li	a5,1
+  38:	faf42623          	sw	a5,-84(s0)
+  3c:	00100793          	li	a5,1
+  40:	faf41523          	sh	a5,-86(s0)
+  44:	00100793          	li	a5,1
+  48:	faf404a3          	sb	a5,-87(s0)
+  4c:	fb840793          	addi	a5,s0,-72
+  50:	fef42623          	sw	a5,-20(s0)
+  54:	fb040793          	addi	a5,s0,-80
+  58:	fef42423          	sw	a5,-24(s0)
+  5c:	fac40793          	addi	a5,s0,-84
+  60:	fef42223          	sw	a5,-28(s0)
+  64:	faa40793          	addi	a5,s0,-86
+  68:	fef42023          	sw	a5,-32(s0)
+  6c:	fa940793          	addi	a5,s0,-87
+  70:	fcf42e23          	sw	a5,-36(s0)
+  74:	00000793          	li	a5,0
+  78:	00000813          	li	a6,0
+  7c:	fcf42823          	sw	a5,-48(s0)
+  80:	fd042a23          	sw	a6,-44(s0)
+  84:	fcf42423          	sw	a5,-56(s0)
+  88:	fd042623          	sw	a6,-52(s0)
+  8c:	fc042223          	sw	zero,-60(s0)
+  90:	fc041123          	sh	zero,-62(s0)
+  94:	fc0400a3          	sb	zero,-63(s0)
+  98:	fe442783          	lw	a5,-28(s0)
+  9c:	0007a7f7          	elw	a5,0(a5)
+  a0:	fcf42223          	sw	a5,-60(s0)
+  a4:	fe042783          	lw	a5,-32(s0)
+  a8:	000797f7          	elh	a5,0(a5)
+  ac:	fcf41123          	sh	a5,-62(s0)
+  b0:	fdc42783          	lw	a5,-36(s0)
+  b4:	000787f7          	elb	a5,0(a5)
+  b8:	fcf400a3          	sb	a5,-63(s0)
+  bc:	fe042783          	lw	a5,-32(s0)
+  c0:	0007d7f7          	elhu	a5,0(a5)
+  c4:	fcf41123          	sh	a5,-62(s0)
+  c8:	fdc42783          	lw	a5,-36(s0)
+  cc:	0007c7f7          	elbu	a5,0(a5)
+  d0:	fcf400a3          	sb	a5,-63(s0)
+  d4:	00000793          	li	a5,0
+  d8:	00078513          	mv	a0,a5
+  dc:	06c12403          	lw	s0,108(sp)
+  e0:	07010113          	addi	sp,sp,112
+  e4:	00008067          	ret

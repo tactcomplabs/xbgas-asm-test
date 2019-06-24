@@ -1,0 +1,64 @@
+
+load.o:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	7119                	addi	sp,sp,-128
+   2:	fca2                	sd	s0,120(sp)
+   4:	0100                	addi	s0,sp,128
+   6:	87aa                	mv	a5,a0
+   8:	f8b43023          	sd	a1,-128(s0)
+   c:	f8f42623          	sw	a5,-116(s0)
+  10:	4785                	li	a5,1
+  12:	faf43423          	sd	a5,-88(s0)
+  16:	4785                	li	a5,1
+  18:	faf43023          	sd	a5,-96(s0)
+  1c:	4785                	li	a5,1
+  1e:	f8f42e23          	sw	a5,-100(s0)
+  22:	4785                	li	a5,1
+  24:	f8f41d23          	sh	a5,-102(s0)
+  28:	4785                	li	a5,1
+  2a:	f8f40ca3          	sb	a5,-103(s0)
+  2e:	fa840793          	addi	a5,s0,-88
+  32:	fef43423          	sd	a5,-24(s0)
+  36:	fa040793          	addi	a5,s0,-96
+  3a:	fef43023          	sd	a5,-32(s0)
+  3e:	f9c40793          	addi	a5,s0,-100
+  42:	fcf43c23          	sd	a5,-40(s0)
+  46:	f9a40793          	addi	a5,s0,-102
+  4a:	fcf43823          	sd	a5,-48(s0)
+  4e:	f9940793          	addi	a5,s0,-103
+  52:	fcf43423          	sd	a5,-56(s0)
+  56:	fc043023          	sd	zero,-64(s0)
+  5a:	fa043c23          	sd	zero,-72(s0)
+  5e:	fa042a23          	sw	zero,-76(s0)
+  62:	fa041923          	sh	zero,-78(s0)
+  66:	fa0408a3          	sb	zero,-79(s0)
+  6a:	fe843783          	ld	a5,-24(s0)
+  6e:	0007e7f7          	elq	a5,0(a5)
+  72:	fcf43023          	sd	a5,-64(s0)
+  76:	fe043783          	ld	a5,-32(s0)
+  7a:	0007b7f7          	eld	a5,0(a5)
+  7e:	faf43c23          	sd	a5,-72(s0)
+  82:	fd843783          	ld	a5,-40(s0)
+  86:	0007a7f7          	elw	a5,0(a5)
+  8a:	faf42a23          	sw	a5,-76(s0)
+  8e:	fd043783          	ld	a5,-48(s0)
+  92:	000797f7          	elh	a5,0(a5)
+  96:	faf41923          	sh	a5,-78(s0)
+  9a:	fc843783          	ld	a5,-56(s0)
+  9e:	000787f7          	elb	a5,0(a5)
+  a2:	faf408a3          	sb	a5,-79(s0)
+  a6:	fd043783          	ld	a5,-48(s0)
+  aa:	0007d7f7          	elhu	a5,0(a5)
+  ae:	faf41923          	sh	a5,-78(s0)
+  b2:	fc843783          	ld	a5,-56(s0)
+  b6:	0007c7f7          	elbu	a5,0(a5)
+  ba:	faf408a3          	sb	a5,-79(s0)
+  be:	4781                	li	a5,0
+  c0:	853e                	mv	a0,a5
+  c2:	7466                	ld	s0,120(sp)
+  c4:	6109                	addi	sp,sp,128
+  c6:	8082                	ret

@@ -1,0 +1,97 @@
+
+amo.o:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	7119                	addi	sp,sp,-128
+   2:	fc86                	sd	ra,120(sp)
+   4:	f8a2                	sd	s0,112(sp)
+   6:	0100                	addi	s0,sp,128
+   8:	87aa                	mv	a5,a0
+   a:	f8b43023          	sd	a1,-128(s0)
+   e:	f8f42623          	sw	a5,-116(s0)
+  12:	4785                	li	a5,1
+  14:	faf43023          	sd	a5,-96(s0)
+  18:	4785                	li	a5,1
+  1a:	f8f42e23          	sw	a5,-100(s0)
+  1e:	4785                	li	a5,1
+  20:	f8f41d23          	sh	a5,-102(s0)
+  24:	4785                	li	a5,1
+  26:	f8f40ca3          	sb	a5,-103(s0)
+  2a:	fa040793          	addi	a5,s0,-96
+  2e:	fef43423          	sd	a5,-24(s0)
+  32:	f9c40793          	addi	a5,s0,-100
+  36:	fef43023          	sd	a5,-32(s0)
+  3a:	f9a40793          	addi	a5,s0,-102
+  3e:	fcf43c23          	sd	a5,-40(s0)
+  42:	f9940793          	addi	a5,s0,-103
+  46:	fcf43823          	sd	a5,-48(s0)
+  4a:	47a9                	li	a5,10
+  4c:	fcf43423          	sd	a5,-56(s0)
+  50:	47a9                	li	a5,10
+  52:	fcf42223          	sw	a5,-60(s0)
+  56:	47a9                	li	a5,10
+  58:	fcf41123          	sh	a5,-62(s0)
+  5c:	47a9                	li	a5,10
+  5e:	fcf400a3          	sb	a5,-63(s0)
+  62:	4785                	li	a5,1
+  64:	faf43c23          	sd	a5,-72(s0)
+  68:	06400793          	li	a5,100
+  6c:	faf43823          	sd	a5,-80(s0)
+  70:	fa043423          	sd	zero,-88(s0)
+  74:	fb843783          	ld	a5,-72(s0)
+  78:	0007f67b          	eaddie	e12,0,a5
+  7c:	fcf43423          	sd	a5,-56(s0)
+  80:	47a9                	li	a5,10
+  82:	fcf43423          	sd	a5,-56(s0)
+  86:	4785                	li	a5,1
+  88:	fe043703          	ld	a4,-32(s0)
+  8c:	0ef767eb          	eamoadd.w	a5,a5,a4
+  90:	fcf42223          	sw	a5,-60(s0)
+  94:	4785                	li	a5,1
+  96:	fe843703          	ld	a4,-24(s0)
+  9a:	0ef777eb          	eamoadd.d	a5,a5,a4
+  9e:	fcf43423          	sd	a5,-56(s0)
+  a2:	4785                	li	a5,1
+  a4:	fe043703          	ld	a4,-32(s0)
+  a8:	0af767eb          	eamomax.w	a5,a5,a4
+  ac:	fcf42223          	sw	a5,-60(s0)
+  b0:	fe843783          	ld	a5,-24(s0)
+  b4:	fb043703          	ld	a4,-80(s0)
+  b8:	0ae7f7eb          	eamomax.d	a5,a4,a5
+  bc:	fcf43423          	sd	a5,-56(s0)
+  c0:	fe843783          	ld	a5,-24(s0)
+  c4:	fa843703          	ld	a4,-88(s0)
+  c8:	08e7f7eb          	eamomin.d	a5,a4,a5
+  cc:	fcf43423          	sd	a5,-56(s0)
+  d0:	fa043783          	ld	a5,-96(s0)
+  d4:	863e                	mv	a2,a5
+  d6:	fc843583          	ld	a1,-56(s0)
+  da:	000007b7          	lui	a5,0x0
+  de:	00078513          	mv	a0,a5
+  e2:	00000097          	auipc	ra,0x0
+  e6:	000080e7          	jalr	ra # e2 <main+0xe2>
+  ea:	fa043703          	ld	a4,-96(s0)
+  ee:	fe843783          	ld	a5,-24(s0)
+  f2:	04e7f7eb          	eamoand.d	a5,a4,a5
+  f6:	fcf43423          	sd	a5,-56(s0)
+  fa:	fa043703          	ld	a4,-96(s0)
+  fe:	fe843783          	ld	a5,-24(s0)
+ 102:	02e7f7eb          	eamoxor.d	a5,a4,a5
+ 106:	fcf43423          	sd	a5,-56(s0)
+ 10a:	fa043703          	ld	a4,-96(s0)
+ 10e:	fe843783          	ld	a5,-24(s0)
+ 112:	06e7f7eb          	eamoor.d	a5,a4,a5
+ 116:	fcf43423          	sd	a5,-56(s0)
+ 11a:	fa043703          	ld	a4,-96(s0)
+ 11e:	fe843783          	ld	a5,-24(s0)
+ 122:	0ce7f7eb          	eamocas.d	a5,a4,a5
+ 126:	fcf43423          	sd	a5,-56(s0)
+ 12a:	4781                	li	a5,0
+ 12c:	853e                	mv	a0,a5
+ 12e:	70e6                	ld	ra,120(sp)
+ 130:	7446                	ld	s0,112(sp)
+ 132:	6109                	addi	sp,sp,128
+ 134:	8082                	ret

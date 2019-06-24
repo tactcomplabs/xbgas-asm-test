@@ -1,0 +1,52 @@
+
+raw.o:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	711d                	addi	sp,sp,-96
+   2:	eca2                	sd	s0,88(sp)
+   4:	1080                	addi	s0,sp,96
+   6:	87aa                	mv	a5,a0
+   8:	fab43023          	sd	a1,-96(s0)
+   c:	faf42623          	sw	a5,-84(s0)
+  10:	4785                	li	a5,1
+  12:	faf43c23          	sd	a5,-72(s0)
+  16:	4785                	li	a5,1
+  18:	faf42a23          	sw	a5,-76(s0)
+  1c:	4785                	li	a5,1
+  1e:	faf41923          	sh	a5,-78(s0)
+  22:	4785                	li	a5,1
+  24:	faf408a3          	sb	a5,-79(s0)
+  28:	fb840793          	addi	a5,s0,-72
+  2c:	fef43423          	sd	a5,-24(s0)
+  30:	fb440793          	addi	a5,s0,-76
+  34:	fef43023          	sd	a5,-32(s0)
+  38:	fb240793          	addi	a5,s0,-78
+  3c:	fcf43c23          	sd	a5,-40(s0)
+  40:	fb140793          	addi	a5,s0,-79
+  44:	fcf43823          	sd	a5,-48(s0)
+  48:	fc043423          	sd	zero,-56(s0)
+  4c:	fc042223          	sw	zero,-60(s0)
+  50:	fc041123          	sh	zero,-62(s0)
+  54:	fc0400a3          	sb	zero,-63(s0)
+  58:	aaa837b3          	erld	a5,a6,e10
+  5c:	aaa827b3          	erlw	a5,a6,e10
+  60:	aaa817b3          	erlh	a5,a6,e10
+  64:	aaa807b3          	erlb	a5,a6,e10
+  68:	aaa857b3          	erlhu	a5,a6,e10
+  6c:	aaa847b3          	erlbu	a5,a6,e10
+  70:	44a7b7b3          	ersd	a5,a5,e10
+  74:	44a7a7b3          	ersw	a5,a5,e10
+  78:	44a797b3          	ersh	a5,a5,e10
+  7c:	44a787b3          	ersb	a5,a5,e10
+  80:	46b7b533          	erse	e10,a5,e11
+  84:	000567fb          	eaddi	a5,0,e10
+  88:	0007f57b          	eaddie	e10,0,a5
+  8c:	00057a83          	eaddix	e21,0,e10
+  90:	4781                	li	a5,0
+  92:	853e                	mv	a0,a5
+  94:	6466                	ld	s0,88(sp)
+  96:	6125                	addi	sp,sp,96
+  98:	8082                	ret
