@@ -31,47 +31,47 @@ int main(int argc, char **argv ){
   uint16_t U16 = 10;
   uint8_t  U8  = 10;
 
-	/* Remote Node ID*/
-	uint64_t EXT = 1;
+  /* Remote Node ID*/
+  uint64_t EXT = 1;
 
 
   /* EADDI */
-  asm volatile 
+  asm volatile
 	(
-		" eaddi %[z], 0, e10 \n\t"
+		" eaddi %[z], e10, 0 \n\t"
 		: [z] 	"=r"	(U64)
-		: [e10] "r" 	(EXT) 
+		: [e10] "r" 	(EXT)
 	);
 
   /* EADDIE */
   asm volatile // Set the remote node id
 	(
-		" eaddie e10, 0, %[x] \n\t"
+		" eaddie e10, %[x], 0 \n\t"
 		: [e10] "=r"	(U64)
-		: [x] 	"r" 	(EXT) 
+		: [x] 	"r" 	(EXT)
 	);
 
   /* EADDIE */
-  asm volatile 
+  asm volatile
 	(
-		" eaddie e8, 1, %[x] \n\t"
+		" eaddie e8, %[x], 1 \n\t"
 		: [e8] 	"=r"	(U64)
-		: [x] 	"r" 	(EXT) 
+		: [x] 	"r" 	(EXT)
 	);
 
   /* EADDIX */
   asm volatile // Set the remote node id
 	(
-		" eaddix e8, 1, e10 \n\t"
+		" eaddix e8, e10, 1 \n\t"
 		: [e8] 	"=r"	(U64)
-		: [e10] "r" 	(EXT) 
+		: [e10] "r" 	(EXT)
 	);
 
   /* ERSW */
   asm volatile
   (
     " ersw %[x], %[z], e10 \n\t"
-    : 
+    :
     : [x] "r" (U32), [z] "r" (P_U32), [e10] "r" (EXT)
   );
 
@@ -79,7 +79,7 @@ int main(int argc, char **argv ){
   asm volatile
   (
     " ersh %[x], %[z], e10 \n\t"
-    : 
+    :
     : [x] "r" (U16), [z] "r" (P_U16), [e10] "r" (EXT)
   );
 
@@ -87,7 +87,7 @@ int main(int argc, char **argv ){
   asm volatile
   (
     " ersb %[x], %[z], e10 \n\t"
-    : 
+    :
     : [x] "r" (U8), [z] "r" (P_U8), [e10] "r" (EXT)
   );
 
@@ -95,7 +95,7 @@ int main(int argc, char **argv ){
   asm volatile
   (
     " erse e8, %[z], e10 \n\t"
-    : 
+    :
     : [e8] "r" (U32), [z] "r" (P_U32), [e10] "r" (EXT)
   );
 
