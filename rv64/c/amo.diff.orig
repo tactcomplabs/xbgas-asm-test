@@ -42,7 +42,7 @@ Disassembly of section .text:
   6c:	faf43823          	sd	a5,-80(s0)
   70:	fa043423          	sd	zero,-88(s0)
   74:	fb843783          	ld	a5,-72(s0)
-  78:	0007f67b          	eaddie	e12,0,a5
+  78:	0007f67b          	eaddie	e12,a5,0
   7c:	fcf43423          	sd	a5,-56(s0)
   80:	47a9                	li	a5,10
   82:	fcf43423          	sd	a5,-56(s0)

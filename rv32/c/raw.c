@@ -42,9 +42,9 @@ int main(int argc, char **argv ){
   asm("ersh a5,a5,e10");
   asm("ersb a5,a5,e10");
   asm("erse e10,a5,e11");
-  asm("eaddi a5,0,e10");
-  asm("eaddie e10,0,a5");
-  asm("eaddix e21,0,e10");
+  asm("eaddi a5,e10,0");
+  asm("eaddie e10,a5,0");
+  asm("eaddix e21,e10,0");
 
   return 0;
 }

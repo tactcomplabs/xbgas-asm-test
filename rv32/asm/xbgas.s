@@ -247,22 +247,22 @@ RegisterTests:
         elbu     x30,0(x20)
         elbu     x31,0(x21)
 
-        eaddix  e0,0,e1
-        eaddix  e2,0,e3
-        eaddix  e4,0,e5
-        eaddix  e6,0,e7
-        eaddix  e8,0,e9
-        eaddix  e10,0,e11
-        eaddix  e12,0,e13
-        eaddix  e14,0,e15
-        eaddix  e16,0,e17
-        eaddix  e18,0,e19
-        eaddix  e20,0,e21
-        eaddix  e22,0,e23
-        eaddix  e24,0,e25
-        eaddix  e26,0,e27
-        eaddix  e28,0,e29
-        eaddix  e30,0,e31
+        eaddix  e0,e1,0
+        eaddix  e2,e3,0
+        eaddix  e4,e5,0
+        eaddix  e6,e7,0
+        eaddix  e8,e9,0
+        eaddix  e10,e11,0
+        eaddix  e12,e13,0
+        eaddix  e14,e15,0
+        eaddix  e16,e17,0
+        eaddix  e18,e19,0
+        eaddix  e20,e21,0
+        eaddix  e22,e23,0
+        eaddix  e24,e25,0
+        eaddix  e26,e27,0
+        eaddix  e28,e29,0
+        eaddix  e30,e31,0
 LoadTests:
         #-- loads
         elw     a5,40(x31)
@@ -290,29 +290,29 @@ RawLoadStoreTests:
         ersb    a5,a5,e10
         erse    e10,a5,e11
 
-        eaddi   a5,-32,e10
-        eaddi   a5,-16,e10
-        eaddi   a5,-8,e10
-        eaddi   a5,0,e10
-        eaddi   a5,8,e10
-        eaddi   a5,16,e10
-        eaddi   a5,32,e10
+        eaddi   a5,e10,-32
+        eaddi   a5,e10,-16
+        eaddi   a5,e10,-8
+        eaddi   a5,e10,0
+        eaddi   a5,e10,8
+        eaddi   a5,e10,16
+        eaddi   a5,e10,32
 
-        eaddie  e10,-32,a5
-        eaddie  e10,-16,a5
-        eaddie  e10,-8,a5
-        eaddie  e10,0,a5
-        eaddie  e10,8,a5
-        eaddie  e10,16,a5
-        eaddie  e10,32,a5
+        eaddie  e10,a5,-32
+        eaddie  e10,a5,-16
+        eaddie  e10,a5,-8
+        eaddie  e10,a5,0
+        eaddie  e10,a5,8
+        eaddie  e10,a5,16
+        eaddie  e10,a5,32
 
-        eaddix   e21,-32,e10
-        eaddix   e21,-16,e10
-        eaddix   e21,-8,e10
-        eaddix   e21,0,e10
-        eaddix   e21,8,e10
-        eaddix   e21,16,e10
-        eaddix   e21,32,e10
+        eaddix   e21,e10,-32
+        eaddix   e21,e10,-16
+        eaddix   e21,e10,-8
+        eaddix   e21,e10,0
+        eaddix   e21,e10,8
+        eaddix   e21,e10,16
+        eaddix   e21,e10,32
 
 	.size	TestFunc, .-TestFunc
 

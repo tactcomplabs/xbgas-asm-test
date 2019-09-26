@@ -44,22 +44,22 @@ Disassembly of section .text:
   90:	fd042623          	sw	a6,-52(s0)
   94:	fc842783          	lw	a5,-56(s0)
   98:	fcc42803          	lw	a6,-52(s0)
-  9c:	000567fb          	eaddi	a5,0,e10
+  9c:	000567fb          	eaddi	a5,e10,0
   a0:	fcf42c23          	sw	a5,-40(s0)
   a4:	fd042e23          	sw	a6,-36(s0)
   a8:	fc842783          	lw	a5,-56(s0)
   ac:	fcc42803          	lw	a6,-52(s0)
-  b0:	0007f57b          	eaddie	e10,0,a5
+  b0:	0007f57b          	eaddie	e10,a5,0
   b4:	fcf42c23          	sw	a5,-40(s0)
   b8:	fd042e23          	sw	a6,-36(s0)
   bc:	fc842783          	lw	a5,-56(s0)
   c0:	fcc42803          	lw	a6,-52(s0)
-  c4:	0017f47b          	eaddie	e8,1,a5
+  c4:	0017f47b          	eaddie	e8,a5,1
   c8:	fcf42c23          	sw	a5,-40(s0)
   cc:	fd042e23          	sw	a6,-36(s0)
   d0:	fc842783          	lw	a5,-56(s0)
   d4:	fcc42803          	lw	a6,-52(s0)
-  d8:	00157403          	eaddix	e8,1,e10
+  d8:	00157403          	eaddix	e8,e10,1
   dc:	fcf42c23          	sw	a5,-40(s0)
   e0:	fd042e23          	sw	a6,-36(s0)
   e4:	fd442703          	lw	a4,-44(s0)

@@ -53,7 +53,7 @@ Disassembly of section .text:
   b4:	fb042e23          	sw	a6,-68(s0)
   b8:	fc842783          	lw	a5,-56(s0)
   bc:	fcc42803          	lw	a6,-52(s0)
-  c0:	0007f67b          	eaddie	e12,0,a5
+  c0:	0007f67b          	eaddie	e12,a5,0
   c4:	fcf42c23          	sw	a5,-40(s0)
   c8:	fd042e23          	sw	a6,-36(s0)
   cc:	00a00793          	li	a5,10

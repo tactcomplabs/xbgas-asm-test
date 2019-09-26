@@ -50,7 +50,7 @@ int main(int argc, char **argv ){
   /* EADDIE */
   asm volatile // Set the remote node id
 	(
-		" eaddie e12, 0, %[x] \n\t"
+		" eaddie e12, %[x], 0 \n\t"
 		: [e12] "=r" (U64)
 		: [x] 	"r" 	(EXT) 
 	);
