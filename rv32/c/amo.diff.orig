@@ -62,27 +62,27 @@ Disassembly of section .text:
   d8:	fd042e23          	sw	a6,-36(s0)
   dc:	00100793          	li	a5,1
   e0:	fe842703          	lw	a4,-24(s0)
-  e4:	0ef767eb          	eamoadd.w	a5,a5,a4
+  e4:	0ee7e7eb          	eamoadd.w	a5,a5,a4
   e8:	fcf42a23          	sw	a5,-44(s0)
   ec:	00100793          	li	a5,1
   f0:	fec42703          	lw	a4,-20(s0)
-  f4:	0ef777eb          	eamoadd.d	a5,a5,a4
+  f4:	0ee7f7eb          	eamoadd.d	a5,a5,a4
   f8:	fcf42c23          	sw	a5,-40(s0)
   fc:	fd042e23          	sw	a6,-36(s0)
  100:	00100793          	li	a5,1
  104:	fe842703          	lw	a4,-24(s0)
- 108:	0af767eb          	eamomax.w	a5,a5,a4
+ 108:	0ae7e7eb          	eamomax.w	a5,a5,a4
  10c:	fcf42a23          	sw	a5,-44(s0)
  110:	fec42703          	lw	a4,-20(s0)
  114:	fc042783          	lw	a5,-64(s0)
  118:	fc442803          	lw	a6,-60(s0)
- 11c:	0af777eb          	eamomax.d	a5,a5,a4
+ 11c:	0ae7f7eb          	eamomax.d	a5,a5,a4
  120:	fcf42c23          	sw	a5,-40(s0)
  124:	fd042e23          	sw	a6,-36(s0)
  128:	fec42703          	lw	a4,-20(s0)
  12c:	fb842783          	lw	a5,-72(s0)
  130:	fbc42803          	lw	a6,-68(s0)
- 134:	08f777eb          	eamomin.d	a5,a5,a4
+ 134:	08e7f7eb          	eamomin.d	a5,a5,a4
  138:	fcf42c23          	sw	a5,-40(s0)
  13c:	fd042e23          	sw	a6,-36(s0)
  140:	fb042783          	lw	a5,-80(s0)
@@ -98,25 +98,25 @@ Disassembly of section .text:
  168:	fb042783          	lw	a5,-80(s0)
  16c:	fb442803          	lw	a6,-76(s0)
  170:	fec42703          	lw	a4,-20(s0)
- 174:	04f777eb          	eamoand.d	a5,a5,a4
+ 174:	04e7f7eb          	eamoand.d	a5,a5,a4
  178:	fcf42c23          	sw	a5,-40(s0)
  17c:	fd042e23          	sw	a6,-36(s0)
  180:	fb042783          	lw	a5,-80(s0)
  184:	fb442803          	lw	a6,-76(s0)
  188:	fec42703          	lw	a4,-20(s0)
- 18c:	02f777eb          	eamoxor.d	a5,a5,a4
+ 18c:	02e7f7eb          	eamoxor.d	a5,a5,a4
  190:	fcf42c23          	sw	a5,-40(s0)
  194:	fd042e23          	sw	a6,-36(s0)
  198:	fb042783          	lw	a5,-80(s0)
  19c:	fb442803          	lw	a6,-76(s0)
  1a0:	fec42703          	lw	a4,-20(s0)
- 1a4:	06f777eb          	eamoor.d	a5,a5,a4
+ 1a4:	06e7f7eb          	eamoor.d	a5,a5,a4
  1a8:	fcf42c23          	sw	a5,-40(s0)
  1ac:	fd042e23          	sw	a6,-36(s0)
  1b0:	fb042783          	lw	a5,-80(s0)
  1b4:	fb442803          	lw	a6,-76(s0)
  1b8:	fec42703          	lw	a4,-20(s0)
- 1bc:	0cf777eb          	eamocas.d	a5,a5,a4
+ 1bc:	0ce7f7eb          	eamocas.d	a5,a5,a4
  1c0:	fcf42c23          	sw	a5,-40(s0)
  1c4:	fd042e23          	sw	a6,-36(s0)
  1c8:	00000793          	li	a5,0
