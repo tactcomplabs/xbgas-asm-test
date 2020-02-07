@@ -33,7 +33,7 @@ int main(int argc, char **argv ){
 
 	/* Remote Node ID*/
 	uint64_t EXT = 1;
-
+	uint64_t cmp = 2;
 	/*Max Value*/
 	uint64_t MAX = 100;
 	uint64_t MIN = 0;
@@ -59,27 +59,53 @@ int main(int argc, char **argv ){
 	
 		
 
+	printf("before: S32 = %d\n", S_U32);	
 	/* EAMOADD.W */
   asm volatile
   (
-    " eamoadd.w %[rd], %[rs2], %[rs1]  \n\t"
+    " eamoadd.w %[rd], %[rs1], %[rs2]  \n\t"
     : [rd] "=r" (U32)
     : [rs2] "r" (1),   [rs1] "r" (P_U32)
 	);
 
+	printf("after : S32 = %d\n", S_U32);	
+
+
+
+
+	printf("before: S64 = %d\n", S64);	
 	/* EAMOADD.D */
   asm volatile
   (
-    " eamoadd.d %[rd], %[rs2], %[rs1]  \n\t"
+    " eamoadd.d %[rd], %[rs1], %[rs2]  \n\t"
     : [rd] "=r" (U64)
     : [rs2] "r" (1),   [rs1] "r" (P_U64)
   );
 
+	printf("after add: S64 = %d\n", S64);	
 
+	
+	printf("address = %lu\n", P_U64);
+	U64 = 0;
+	printf("before cas : S64 = %d\n", S64);	
+  /* EAMOCAS */
+  asm volatile
+  (
+    " eamocas.d %[x], %[y], %[z] \n\t"
+    : [x] "=r" (U64)
+    : [y] "r" (P_U64), [z] "r" (cmp)
+  );
+
+
+	printf("after cas : S64 = %d\n", S64);	
+	printf("after cas : U64 = %d\n", U64);	
+
+
+	//while(1);
 	/* EAMOMAX.W */
   asm volatile
   (
-    " eamomax.w %[rd], %[rs2], %[rs1]  \n\t"
+    " eamomax.w %[rd], %[rs1], %[rs2]  \n\t"
     : [rd] "=r" (U32)
     : [rs2] "r" (1),   [rs1] "r" (P_U32)
 	);
@@ -88,7 +114,7 @@ int main(int argc, char **argv ){
   /* EAMOMAX */
   asm volatile
   (
-    " eamomax.d %[x], %[z], %[y] \n\t"
+    " eamomax.d %[x], %[y], %[z] \n\t"
     : [x] "=r" (U64)
     : [y] "r" (P_U64), [z] "r" (MAX)
   );
@@ -97,7 +123,7 @@ int main(int argc, char **argv ){
   /* EAMOMIN */
   asm volatile
   (
-    " eamomin.d %[x], %[z], %[y] \n\t"
+    " eamomin.d %[x], %[y], %[z] \n\t"
     : [x] "=r" (U64)
     : [y] "r" (P_U64), [z] "r" (MIN)
   );
@@ -107,7 +133,7 @@ int main(int argc, char **argv ){
   /* EAMOAND */
   asm volatile
   (
-    " eamoand.d %[x], %[z], %[y] \n\t"
+    " eamoand.d %[x], %[y], %[z] \n\t"
     : [x] "=r" (U64)
     : [y] "r" (P_U64), [z] "r" (S64)
   );
@@ -116,7 +142,7 @@ int main(int argc, char **argv ){
   /* EAMOXOR */
   asm volatile
   (
-    " eamoxor.d %[x], %[z], %[y] \n\t"
+    " eamoxor.d %[x], %[y], %[z] \n\t"
     : [x] "=r" (U64)
     : [y] "r" (P_U64), [z] "r" (S64)
   );
@@ -125,20 +151,13 @@ int main(int argc, char **argv ){
   /* EAMOOR */
   asm volatile
   (
-    " eamoor.d %[x], %[z], %[y] \n\t"
+    " eamoor.d %[x], %[y], %[z] \n\t"
     : [x] "=r" (U64)
     : [y] "r" (P_U64), [z] "r" (S64)
   );
 
 
-  /* EAMOCAS */
-  asm volatile
-  (
-    " eamocas.d %[x], %[z], %[y] \n\t"
-    : [x] "=r" (U64)
-    : [y] "r" (P_U64), [z] "r" (S64)
-  );
-	
+	//while(1);	
 
 
   return 0;
